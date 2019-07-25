@@ -24,6 +24,23 @@
 		.page-content {
     padding: 30px;
 		}
+		.float-left {
+			float:right;
+			padding-right:1em;
+		}
+		.clear {
+			clear:both;
+		}
+		a {
+			color: #006a91;
+		}
+		a:hover {
+			color:#e15963
+		}
+		a:visited {
+			color:#ad454c
+		}	
+
 </style>
 
 	<title>Leveraging Online Audio Commons Content For Media Production Companion Website</title>
@@ -34,18 +51,64 @@
 
 	<h1 class="title">Companion Website :: Routledge</h1>
 
-	<p>This is the companion website of the book chapter "Leveraging Online Audio Commons Content For Media Production" (2018)
+	<img src="assets/images/FSDLM-cover.jpg" width="104px" class="float-left" />
+
+	<p>This is the companion website of the book chapter <a href="https://www.taylorfrancis.com/books/e/9781315106335">"Leveraging Online Audio Commons Content For Media Production"</a> (2019)
 	by Anna Xambó, Frederic Font, György Fazekas, and Mathieu Barthet, which appears in Michael Filimowicz (ed.) <em>Foundations in Sound Design for Linear Media: An Interdisciplinary Approach</em>, Routledge.</p>
 
-	<h1>Sound Examples</h1>
+	<br />
 
-	<h2>AudioTexture</h2>
+	<h1 class="clear">Outline</h1>
+
+	<ul>
+		<li><a href="#souexa">Sound Examples</a></li>
+		<ul>
+			<li><a href="#audtex">AudioTexture</a></li>
+			<ul>
+			<li><a href="#audtex-ex1">Example 1 - Rain by Anna Xambó</a></li>
+			<li><a href="#audtex-ex2">Example 2 - Footsteps by Anna Xambó</a></li>
+			<li><a href="#audtex-ex3">Example 3 - Crowd by Anna Xambó</a></li>
+			<li><a href="#audtex-ex4">Example 4 - Reshuffling a bass line by Anna Xambó</a></li>
+			<li><a href="#audtex-ex5">Example 5 - MareNostrum by Anna Xambó</a></li>
+			</ul>
+			<li><a href="#samsur">SampleSurfer</li>
+			<ul>
+			<li><a href="#samsur-ex1">Example 1 - Edited vs. original sound by Anna Xambó</a></li>
+			<li><a href="#samsur-ex2">Example 2 - AudioCommons Trap: A musical composition with edited loops by Anna Xambó</a></li>
+			</ul>
+			<li><a href="#soucom">Soundscape Composition</a></li>
+			<ul>
+			<li><a href="#soucom-ex1">Example 1 - Submerged by Andrew Thompson</a></li>
+			<li><a href="#soucom-ex2">Example 2 - “Space meal” by Andrea Guidi</a></li>
+			<li><a href="#soucom-ex3">Example 3 - “A camper and his dog in France” by Caryl Jones</a></li>
+			</ul>
+			<li><a href="#mirlc">MIRLC (MIR and Live Coding)</a></li>
+			<ul>
+			<li><a href="#mirlc-ex1">Example 1 - Demo by Anna Xambó</a></li>
+			<li><a href="#mirlc-ex2">Example 2 - Music improvisation by Jack Armitage</a></li>
+			<li><a href="#mirlc-ex3">Example 3 - Music improvisation by Alo Allik</a></li>
+			<li><a href="#mirlc-ex4">Example 4 - H2RI.04 by Anna Xambó (H2RI, pan y rosas 2018)</a></li>
+			<li></li>
+			</ul>
+			<li><a href="#plasou">Play.sound</a></li>
+			<ul>
+			<li><a href="#plasou-ex1">Example 1 - Demo with laptop trios</a></li>
+			<li><a href="#plasou-ex2">Example 2 - Crowd Noises by The Puppets</a></li>
+			<li><a href="#plasou-ex3">Example 3 - Adaptation of Gertrude Stein's poem Tender Buttons by Ariane Stolfi</a></li>
+			</ul>
+		</ul>
+		<li><a href="#labact">Lab Activities</li>
+	</ul>
+
+	<h1><a id="souexa"></a>Sound Examples</h1>
+
+	<h2><a id="audtex"></a>AudioTexture</h2>
 
 	<p>Developed by Le Sound, <a href="https://lesound.io/product/audiotexture-free/">AudioTexture</a> is a plugin prototype for sound texture synthesis that leverages Audio Commons by bringing CC-licensed audio content into the DAW. The AudioTexture plugin lets users generate sonic textures from audio recordings from either online or local databases within a DAW environment, such as Logic Pro X, Ableton Live, or Reaper.</p>
 
-	<h3>Example 1: Rain by Anna Xambó</h3>
+	<h3><a id="audtex-ex1"></a>Example 1 - Rain by Anna Xambó</h3>
 
-	<p>This example explores the granular texture of rain drips with the mode Noisiness-Y of AudioTexture. The unit size of the grain is changed in real time creating a glitch effect that contrasts with the expected linearity of the sound.
+	<p>This example explores the granular texture of rain drips with the mode Noisiness-Y of AudioTexture using Reaper. The unit size of the grain is changed in real time creating a glitch effect that contrasts with the expected linearity of the sound.
 	This example has been built upon the sound <a href="https://freesound.org/people/DJMistressM/sounds/476202/">"Rain Drips"</a> by <a href="https://freesound.org/people/DJMistressM/">DJMistressM</a> from Freesound. </p>
 
 	<div class="center-div-audio">
@@ -55,11 +118,11 @@
 	</audio>
 	</div>
 
-	<h3>Example 2: Footsteps by Anna Xambó</h3>
+	<h3><a id="audtex-ex2"></a>Example 2 - Footsteps by Anna Xambó</h3>
 
-	<p>This example explores the granular texture of footsteps on leaves with the mode Position-X of AudioTexture. The unit size of the grain is
+	<p>This example explores the granular texture of footsteps on leaves with the mode Position-X of AudioTexture using Reaper. The unit size of the grain is
 	set to a small unit size so that the sound grains are short and change fast between them. The region of the target sound grains changes in real time by moving the slider manually, and the rate of the sound is slowly increased moving the knob, creating an increase of pitch and the effect of a high-pass filter.
-	This example has been built upon the sound <a href="https://freesound.org/people/SpliceSound/sounds/218305/">"01-20 Footsteps, sneakers on dry leaves.wav"</a> by <a href="https://freesound.org/people/SpliceSound/">SpliceSound</a> from Freesound. </p>
+	This example has been built upon the sound <a href="https://freesound.org/people/SpliceSound/sounds/218305/">"01-20 Footsteps, sneakers on dry leaves"</a> by <a href="https://freesound.org/people/SpliceSound/">SpliceSound</a> from Freesound. </p>
 
 	<div class="center-div-audio">
 	<audio controls>
@@ -68,12 +131,12 @@
 	</audio>
 	</div>
 
-	<h3>Example 3: Crowd by Anna Xambó</h3>
+	<h3><a id="audtex-ex3"></a>Example 3 - Crowd by Anna Xambó</h3>
 
-	<p>This example explores the granular texture of a large crowd at a medium distance with the mode Noisiness-Y of AudioTexture.
+	<p>This example explores the granular texture of a large crowd at a medium distance with the mode Noisiness-Y of AudioTexture using Reaper.
 		With real-time variations on crossfade, Y range and the vertical slider, the result embraces minimalism composition techniques.
 		A long fade out at the end is produced with the gain functionality of AudioTexture.
-	  This example has been built upon the sound <a href="https://freesound.org/people/eguobyte/sounds/360703/">"Large_crowd_medium_distance_stereo.wav"</a> by <a href="https://freesound.org/people/eguobyte/">eguobyte</a> from Freesound. </p>
+	  This example has been built upon the sound <a href="https://freesound.org/people/eguobyte/sounds/360703/">"Large_crowd_medium_distance_stereo"</a> by <a href="https://freesound.org/people/eguobyte/">eguobyte</a> from Freesound. </p>
 
 	<div class="center-div-audio">
 	<audio controls>
@@ -82,14 +145,14 @@
 	</audio>
 	</div>
 
-	<h3>Example 4: Reshuffling a bass line by Anna Xambó</h3>
+	<h3><a id="audtex-ex4"></a>Example 4 - Reshuffling a bass line by Anna Xambó</h3>
 
 	<p>This example reshuffles a bass line in real time.
-		The reshuffling is made with the mode Brightness-Y of AudioTexture.
+		The reshuffling is made with the mode Brightness-Y of AudioTexture using Reaper.
 		The example starts with a dynamic change of the Y range and vertical slider to change regions of interest and size of the range.
 		The example progresses towards a breakbeat style with an increasing shorter unit size of the sound grains.
 		It ends with a continuous decrease of the rate until the low frequencies of the bass line slowly disappear.
-	  This example has been built upon the sound <a href="https://freesound.org/people/marvman/sounds/31967/">"funk bass edit.wav"</a> by <a href="https://freesound.org/people/marvman/">marvman</a> from Freesound. </p>
+	  This example has been built upon the sound <a href="https://freesound.org/people/marvman/sounds/31967/">"funk bass edit"</a> by <a href="https://freesound.org/people/marvman/">marvman</a> from Freesound. </p>
 
 	<div class="center-div-audio">
 	<audio controls>
@@ -98,7 +161,7 @@
 	</audio>
 	</div>
 
-	<h3>Example 5: Marenostrum by Anna Xambó</h3>
+	<h3><a id="audtex-ex5"></a>Example 5 - MareNostrum by Anna Xambó</h3>
 
 	This piece entitled <a href="http://annaxambo.me/code/marenostrum/">MareNostrum</a> explores the theme of supercomputing centers and the acoustic properties of large-scale computation systems in massive spaces, particularly how a supercomputing center of quantum computers would sound like. The piece is based on the musical spatialization of sounds from crowdsourced online databases from the AudioCommons ecosystem, such as Freesound.org, combined with personal recordings from the <a href="https://www.bsc.es/">Barcelona Supercomputing Center</a> (BSC) and sound synthesis generated with <a href="https://supercollider.github.io/">SuperCollider</a>. Some of the sounds were processed using AudioTexture and the whole composition and performance was developed in SuperCollider. The piece can be listened to in the embedded video below from the performance on August 9, 2018, at Cube Fest 2018, Moss Arts Center, Blacksburg, VA, USA.
 
@@ -112,15 +175,15 @@
 <ul><li>Xambó, A. (October 1, 2018). <a href="https://www.audiocommons.org/2018/10/01/marenostrum-cube-fest-2018.html">MareNostrum @ The Spatial Music Workshop & The Cube Fest 2018</a>. In AudioCommons’s blog.</li></ul>
 
 
-	<h2>SampleSurfer</h2>
+	<h2><a id="samsur"></a>SampleSurfer</h2>
 
 	<p>SampleSurfer has been developed by <a href="https://www.waves.com/">Waves Audio LTD</a> and is another plugin for the Audio Commons Ecosystem that serves as an audio content search engine based on semantic metadata and musical features. The plugin is designed to integrate Audio Commons sound and music samples in a DAW-based environment by providing basic editing capabilities (e.g. fades, trims) to optimize the music production workflow.</p>
 
-	<h3>Example 1: Edited vs. original sound</h3>
+	<h3><a id="samsur-ex1"></a>Example 1 - Edited vs. original sound by Anna Xambó</h3>
 
 	<p>
+		This example selects a short loop of the intro of the song with SampleSurfer and adds a flanger effect using Ableton Live to give some organicity to the loop.
 		This example is based on the original song <a href="https://www.jamendo.com/track/9655/interferences">interferences</a> (2006) by <a href="https://www.jamendo.com/artist/1457/athush">ATHUSH</a> from Jamendo.
-		This example selects a short loop of the intro of the song with SampleSurfer and adds a flanger effect to give some organicity to the loop.
 	</p>
 
 	<div class="center-div-audio">
@@ -132,15 +195,44 @@
 
 
 
-	<h3>Example 2: Musical composition with edited loops</h3>
+	<h3><a id="samsur-ex2"></a>Example 2 - AudioCommons Trap: A musical composition with edited loops by Anna Xambó</h3>
 
-	<p><em>Coming soon...</em></p>
+	<p>
+		This example showcases the possibilities of SampleSurfer by selecting sounds from the online databases of Freesound and Jamendo under certain criteria and creating a musical piece by adding effects with Ableton Live.
+	</p>
 
-	<h2>Soundscape Composition</h2>
+		<div class="center-div-audio">
+		<audio controls>
+			<source src="assets/audio/AudioCommons-trap.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+		</audio>
+		</div>
+
+	<p>
+		There are three sounds that serve as baseline to create a trap beat, which are modified with delays and beat repeat effects:
+		<ul>
+			<li><a href="https://freesound.org/people/TomGoulooze/sounds/235430/">trap loop</a> by <a href="https://freesound.org/people/TomGoulooze">Tom Goulooze</a></li>
+			<li><a href="https://freesound.org/people/paulnorthyorks/sounds/207185/">Seventh Chord Siren Stereo</a> by <a href="https://freesound.org/people/paulnorthyorks">paulnorthyorks</a></li>
+			<li><a href="https://www.jamendo.com/track/547052/bass-bass">Bass Bass</a> by <a href="https://www.jamendo.com/artist/358637/dancig">Dancig</a></li>
+		</ul>
+	</p>
+		<p> Then, 6 sounds are selected to be triggered with the Drum Rack module of Ableton Live, which are influenced by two audio effects, a beat repeat and a bit reduction:
+		<ul>
+			<li><a href="https://freesound.org/people/Jagadamba/sounds/254415/">Simulated robot android cyborg or droid saying welcome (female voice)</a> by <a href="https://freesound.org/people/Jagadamba/">Jagadamba</a></li>
+			<li><a href="https://freesound.org/people/Jagadamba/sounds/254417/">Simulated robot android cyborg or droid saying welcome (male voice)</a> by <a href="https://freesound.org/people/Jagadamba/">Jagadamba</a></li>
+			<li><a href="https://freesound.org/people/Department64/sounds/64010/">kitten15</a> by <a href="https://freesound.org/people/Department64/">Department64</a></li>
+			<li><a href="https://freesound.org/people/InspectorJ/sounds/414074/">Dialogue, Pained Yelp, Loud, E</a> by <a href="https://freesound.org/people/InspectorJ/">InspectorJ</a></li>
+			<li><a href="https://freesound.org/people/qubodup/sounds/219586/">Cyber Off</a> by <a href="https://freesound.org/people/qubodup/">qubodup</a></li>
+			<li><a href="https://freesound.org/people/montblanccandies/sounds/266295/">Hey You (2)</a> by <a href="https://freesound.org/people/montblanccandies/">montblanccandies</a></li>
+		</ul>
+	</p>
+
+
+	<h2><a id="soucom"></a>Soundscape Composition</h2>
 
 	<p>We provide here examples of short soundscape compositions that have been created in the Fall of 2017 by students from the Sound Recording and Production Techniques module at Queen Mary University of London led by Mathieu Barthet. The soundscape themes were found by applying and adapting the participatory design technique described in Holmquist (2008). Students were invited to generate ideas across four categories: character, place/environment, situation/action, and mood. These ideas were combined randomly and formed the basis of soundscape themes after a reflection and simplification phase. Students were given the creative constraint of only using sounds sourced from Audio Commons or Apple Loops. They could edit and process the sounds in the DAW and were able to use Le Sound's AudioTexture plugin to generate novel sonic textures from Audio Commons audio content.</p>
 
-	<h3>Example 1 - Submerged by Andrew Thompson</h3>
+	<h3><a id="soucom-ex1"></a>Example 1 - Submerged by Andrew Thompson</h3>
 
 		<p>Abstract: The piece follows a short dream sequence of an individual drowning under immense pressure in their life. Sounds sourced from Freesound.org are arranged to create a compelling underwater soundscape that evolves into the distant memory of a jazz street performer. AudioTexture provides an evolving bed for the soundscape by blending large grains of an underwater boat recording.</p>
 
@@ -148,7 +240,7 @@
 	<iframe width="640" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/402139254&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
 
-	<h3>Example 2 - “Space meal” by Andrea Guidi</h3>
+	<h3><a id="soucom-ex2"></a>Example 2 - “Space meal” by Andrea Guidi</h3>
 
 	<p>Abstract: A metaphoric conversation between a woman doctor, a friend and smart devices happens during the soundscape. The doctor’s attention is overloaded both by notifications and by her friend's complaints while the listener's auditory experience is overloaded by the amplitude and presence of sounds from their meal (cutleries and chewing).</p>
 
@@ -158,7 +250,7 @@
 	<iframe width="640" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/402139245&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
 
-	<h3>Example 3 - “A camper and his dog in France” by Caryl Jones</h3>
+	<h3><a id="soucom-ex3"></a>Example 3 - “A camper and his dog in France” by Caryl Jones</h3>
 
 	<p>Abstract: The resources for this composition solely included recorded sounds from Freesound, the concatenative synthesis plugin AudioTexture to treat some of these sounds and audio samples from Apple Loops. The digital audio workstation (DAW) used was Logic and Audio Technica headphones for monitoring. The compositional approach was to create a figurative piece with an abstract, dream-like edge of a man walking his dog in France from a first person perspective. Sounds were divided into five categories for the arrangement and laid out in a linear way to tell a story from morning to evening with quick transitions between natural summer scenes. Sounds were arranged and mixed using trim, volume, pan automation, gain and EQ. The composition was mastered using a limiter to stop clipping.</p>
 
@@ -171,13 +263,13 @@
 	<ul><li>Holmquist, L. E. (2008). Bootlegging: multidisciplinary brainstorming with cut-ups. In: <em>Proceedings of the Tenth Anniversary Conference on Participatory Design 2008</em>. Indiana University, pp. 158-161.</li></ul>
 
 
-	<h2>MIRLC (MIR and Live Coding)</h2>
+	<h2><a id="mirlc"></a>MIRLC (MIR and Live Coding)</h2>
 
 	 <p>MIRLC (Xambó et al. 2018) is a library designed to repurpose audio samples from Freesound, which can also be applied to local databases, by providing human-like queries and real-time performance capabilities. The system is built within the SuperCollider environment by leveraging the Freesound API.
 		<a href="https://www.audiocommons.org/2018/06/08/nime-2018-mirlc-fluidsound.html">The library was presented at the New Interfaces for Musical Expression conference</a> at Virginia Tech in 2018.</p>
 
 
-		<h3>Example 1 - Demo by Anna Xambó</h3>
+		<h3><a id="mirlc-ex1"></a>Example 1 - Demo by Anna Xambó</h3>
 
 		<p>This demo showcases the basic functionalities of MIRLRep querying by rhythmic and melodic characteristics.
 			<div class="center-div">
@@ -185,7 +277,7 @@
 				<p style="text-align:center; padding-top:0"><em>MIRLCRep demo by Anna Xamb&oacute;.</em></p>
 			</div>
 
-		<h3>Example 2 - Music improvisation by Jack Armitage</h3>
+		<h3><a id="mirlc-ex2"></a>Example 2 - Music improvisation by Jack Armitage</h3>
 
 		<p>Abstract: Being somewhat familiar with the Freesound database, I wanted to see if it could be used to create a shifting cinematic landscape by text-based search and sequencing alone. I chose four environments that I felt should have reasonable coverage in the database, and that would be sonically distinct; garden, street, city and airport. I came up with three or four search terms for each environment, checked that they returned at least one usable result, and improvised between them using a list of queries as a score. I did not feel in control of the output; the results were largely a surprise.</p>
 
@@ -199,7 +291,7 @@
 		<p>The following CC sounds were used in the piece: <a href="http://crowdj.net/routledge/jack-mirlc-credits.txt">http://crowdj.net/routledge/jack-mirlc-credits.txt</a>
 
 
-		<h3>Example 3 - Music improvisation by Alo Allik</h3>
+		<h3><a id="mirlc-ex3"></a>Example 3 - Music improvisation by Alo Allik</h3>
 
 		<p>Abstract: The MIRLC library opens up new interesting opportunities for live coders who seek to augment their practices with access to Freesound content. This can be done very efficiently on-the-fly with MIRLC and often with an element of surprise to the performer which is frequently the desired behaviour of a system in the world of live coding. This experiment in improvisation makes use of four core samples searched by key words - rainstick, breaking glass, bullroarer and didgeridoo - with a certain sonic context in mind: rainstick for overall texture, breaking glass for punctuation, and the latter two for low frequency contrast. The rest of the sampled content was extracted with the similarity search functionality that allows the live coder to really explore the Freesound database in detail while being constantly surprised by the returned results and having to make compositional choices in response. The core samples were also subjected to further signal processing, including reverberation, playback rate changes and pitch shifting which, when applied simultaneously, create a different, more electronic-sounding sonic outcome. The aesthetic approach here was to gradually move from unprocessed samples to almost unrecognisable digital phasing of sounds. </p>
 
@@ -213,7 +305,7 @@
 		<p>The following CC sounds were used in the piece: <a href="http://crowdj.net/routledge/alo-mirlc-credits.txt">http://crowdj.net/routledge/alo-mirlc-credits.txt</a>
 
 
-		<h3>Example 4 - H2RI.04 by Anna Xambó (H2RI, pan y rosas 2018)</h3>
+		<h3><a id="mirlc-ex4"></a>Example 4 - H2RI.04 by Anna Xambó (H2RI, pan y rosas 2018)</h3>
 
 		<figure class="center-figure">
 			<img src="assets/images/H2RI.jpg" width="350px" />
@@ -239,12 +331,12 @@
 
 		<ul><li>Xambó, A., Roma, G., Lerch, A., Barthet, M. and Fakekas, G. (2018). <a href="http://annaxambo.me/pub/Xambo_et_al_2018_Live_repurposing_of_sounds.pdf">Live repurposing of sounds: MIR explorations with personal and crowdsourced databases</a>. In: Proceedings of the International Conference on New Interfaces for Musical Expression. pp. 364-369.</li></ul>
 
-	<h2>Play.sound</h2>
+	<h2><a id="plasou"></a>Play.sound</h2>
 
 	<p>Playsound.space (Stolfi et al. 2018) is a web-based sound search and music creation tool providing access to online audio content from Audio Commons (Freesound). Playsound can be used in a varied range of contexts, from individual soundscape compositions to collaborative live music improvisations with laptop musicians.
 		<a href="https://www.audiocommons.org/2018/06/01/nime-2018-playsound.html">The tool was presented at the New Interfaces for Musical Expression conference</a> at Virginia Tech in 2018.</p>
 
-<h3>Example 1 - Demo with laptop trios</h3>
+<h3><a id="plasou-ex1"></a>Example 1 - Demo with laptop trios</h3>
 
 We used Playsound.space in the context of free live music improvisation in small ensembles.
 The following video shows laptop trios composed of both non musicians and musicians who were able to play short pieces together after a brief introduction to the tool:</p>
@@ -253,7 +345,7 @@ The following video shows laptop trios composed of both non musicians and musici
 <iframe width="640" height="360" src="https://www.youtube.com/embed/yv8T70rawzs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-<h3>Example 2 - Crowd Noises by The Puppets</h3>
+<h3><a id="plasou-ex2"></a>Example 2 - Crowd Noises by The Puppets</h3>
 
 <p>The following excerpt was produced during an improvisation involving a mixed ensemble of Playsound players and other instrumentalists.
 The excerpt was in turn uploaded to Freesound forming an iterative creative loop between sound producers and consumers:</p>
@@ -262,7 +354,7 @@ The excerpt was in turn uploaded to Freesound forming an iterative creative loop
 <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/434602/simple/large/" width="640" height="240"></iframe>
 </div>
 
-<h3>Example 3 - Adaptation of Gertrude Stein's poem Tender Buttons by Ariane Stolfi</h3>
+<h3><a id="plasou-ex3"></a>Example 3 - Adaptation of Gertrude Stein's poem Tender Buttons by Ariane Stolfi</h3>
 
 <p>Playsound.space was used by Ariane Stolfi to generate a sonic interpretation of Gertrude Stein's poem Tender Buttons. The performer used excerpts of the poem as the source for semantic searches to obtain Creative Commons audio content from illustrating the poem:</p>
 
@@ -280,7 +372,7 @@ Your browser does not support the audio element.
 <ul><li>Stolfi, A. de Souza, Ceriani, M., Turchet, L. and Barthet, M. (2018). <a href="https://www.researchgate.net/publication/324546442_Playsoundspace_Inclusive_Free_Music_Improvisations_Using_Audio_Commons">Playsound.space: inclusive free music improvisations using Audio Commons</a>. In: Proceedings of the International Conference on New Interfaces for Musical Expression. pp. 228-233.</li></ul>
 
 
-<h1>Lab Activities</h1>
+<h1><a id="labact"></a>Lab Activities</h1>
 
 <p>Several lab activities can be organised to familiarise students with Audio Commons content and tools. We provide several instructions sheets to learn how to use the following tools:</p>
 
